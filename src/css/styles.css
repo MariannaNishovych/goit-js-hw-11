@@ -120,17 +120,17 @@ input[type='text'] {
   margin: 0;
 }
 
+
 .loading {
   width: 48px;
   height: 48px;
   border-radius: 50%;
-  display: block;
+  display: none;
   border-top: 4px solid #FFF;
   border-right: 4px solid transparent;
   box-sizing: border-box;
-  animation: 5s lineGrow linear infinite;;
+  animation: 5s rotation linear infinite;
   position: absolute;
-  /* top: 50%; */
   left: 50%;
   transform: translate(-50%, -50%);
 }
@@ -148,7 +148,7 @@ input[type='text'] {
   border-left: 4px solid transparent;
 }
 
-@keyframes lineGrow {
+@keyframes rotation {
   0% {
     transform: rotate(0deg);
   }
@@ -157,3 +157,5 @@ input[type='text'] {
     transform: rotate(360deg);
   }
 }
+
+/* lineGrow */

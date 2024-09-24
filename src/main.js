@@ -28,7 +28,7 @@ function findElement() {
         const inputElement = event.target.elements.search.value.toLowerCase().trim();  
 
         if (!inputElement) {  
-            iziToast.error({ message: 'Please enter a search word.' });  
+            iziToast.error({ message: 'Please enter a search request.'});  
             return;  
         }  
 
@@ -42,7 +42,7 @@ function findElement() {
                 if (element.hits.length === 0) {  
                     iziToast.info({  
                         message:  
-                        'Sorry, there are no images matching your search query. Please try again!',  
+                        'Sorry, there are no images matching your search query. Please try again!'  
                     });  
                 } else {  
                     createMarkup(element.hits, galleryEl);  

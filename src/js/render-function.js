@@ -13,8 +13,6 @@ export function createMarkup(data, gallery) {
         return `<li class="gallery-list">
                     <a class="gallery-link" href="${largeImageURL}">
                         <img class="img" src="${webformatURL}" 
-                        height="152"
-                        width="360" 
                         alt="${tags}" 
                         title="${tags}" />
                     </a>
