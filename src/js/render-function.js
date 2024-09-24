@@ -35,7 +35,7 @@ export function createMarkup(data, gallery) {
                         </li>
                     </ul> 
         </li>`;
-    }).join();
+    }).join("");
     
     gallery.insertAdjacentHTML("beforeend", markup);
 };
